@@ -4,6 +4,7 @@
 ## Introduction 
 Explain the project 
 
+Movie Triva Questions 
 ## Technologies Used 
 - HTML
 - CSS 
@@ -13,7 +14,6 @@ Explain the project
 ## Challenges 
 Explain the issues that you came accross 
 
-## Challenges
 
 #### I have trouble with 
 
