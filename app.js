@@ -7,6 +7,7 @@ const state = {
     player2: 0,
     currentQuestion: {},
     which: true
+    
 }
 
 let questions = []
@@ -26,6 +27,7 @@ const $p2score = $("#player2 h4")
 ////////////////////////////
 // Functions
 ////////////////////////////
+
 
 // Chose answer Function 
 const chooseAnswer = (event, question) => {
@@ -68,6 +70,7 @@ const setBoard = (q) => {
     $("li").on("click", (event) => {
         chooseAnswer(event, randomQuestion)
     })
+ 
 }
 
 ////////////////////////////
@@ -84,3 +87,4 @@ $.ajax(URL)
 
     setBoard(questions)
 })
+
