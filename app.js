@@ -23,6 +23,14 @@ const $d = $("#d")
 const $p1score = $("#player1 h4")
 const $p2score = $("#player2 h4")
 
+// Player names 
+const playerOne = prompt("Player one please enter your name: ")
+const playerTwo = prompt("Player two please enter your name: ")
+
+// Append the names to the board 
+$("#player1").children().eq(0).append(playerOne)
+
+$("#player2").children().eq(0).append(playerTwo)
 
 ////////////////////////////
 // Functions
@@ -37,12 +45,28 @@ const chooseAnswer = (event, question) => {
         if(state.which){
             state.player1++
             state.which = !state.which
+            alert("Ready " + playerTwo)
         }else{
             state.player2++
             state.which = !state.which
+            alert("Ready " + playerOne)
         }
-        setBoard(questions)
+
+        // Set a win function 
+        if(state.player1 === 10){
+            alert("Congratulations " + playerOne +  " on your victory")
+            setBoard(questions)
+            state.player1 = 0
+            state.player2 = 0
+        }else if (state.player2 === 10){
+            alert("Congratulations " + playerTwo +  " on your victory")
+            setBoard(questions)
+            state.player1 = 0
+            state.player2 = 0
+        }
+            setBoard(questions)
     }else {
+        alert("That was incorrect. Next player your up")
         console.log("incorrect")
         setBoard(questions)
         state.which = !state.which
@@ -51,7 +75,7 @@ const chooseAnswer = (event, question) => {
 
 // Getting random Question 
 const setBoard = (q) => {
-
+    // Random Question Generator 
     const randomIndex = Math.floor(Math.random() * q.length)
     const randomQuestion = q[randomIndex]
 

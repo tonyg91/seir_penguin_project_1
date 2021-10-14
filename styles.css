@@ -63,7 +63,7 @@ h1{
 }
 #answer ul li{
     width: 40%;
-    height: 54px;
+    height: auto;
     background-color: black;
     border: 3px solid yellow;
     padding-top: 15px;
@@ -103,20 +103,23 @@ h1{
 
 @media (max-width: 600px) {
     #scores{
-        width: 100%;
+        width: 80%;
     }
     #answer ul li{
         display: flex;
-        flex-wrap: wrap;
-        width: 400%;
-       margin-right: 35px auto;
+        flex-wrap: nowrap;
+        width: 40%;
+        height: auto;
+       margin-right: 45px auto;
        font-size: 10px;
        text-align: center;
        padding: 5px 25px;
+       
     }
     body{
-        background-position: initial;
+        background-position: center;
     }
+    
   }
 
 
