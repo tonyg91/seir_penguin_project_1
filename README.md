@@ -5,6 +5,10 @@
 Explain the project 
 
 Movie Triva Questions 
+
+When starting this project I followed the videos at https://www.youtube.com/playlist?list=PLY6oTPmKnKbYC-NRcAFVN4_R5D3HRmKGu for the basic set up and function of the game. Upon completing the videos I began to customize the game using css and add more features using jQuery and vanilla JavaScript. Such as user input and a win function and letting each person know when it was there turn. 
+
+
 ## Technologies Used 
 - HTML
 - CSS 

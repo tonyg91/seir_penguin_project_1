@@ -95,8 +95,7 @@ const setBoard = (q) => {
     $("li").on("click", (event) => {
         chooseAnswer(event, randomQuestion)
     })
-    $("#reset").on("click", () => {
-         })
+    
 }
 
 ////////////////////////////

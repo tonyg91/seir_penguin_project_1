@@ -3,7 +3,7 @@
  ****************************** */
 
 body{
-    background-image: url("https://t4.ftcdn.net/jpg/04/17/89/93/360_F_417899352_9JpbvlWx6BLTlFP86u4dqDUSsQTawrJv.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/2440/7149/products/WH417_7f3d2472-baff-4466-9a9d-af8b5575df3b_600x.jpg?v=1567157025");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,10 +75,7 @@ h1{
     box-shadow: 6px 4px 30px white;
     cursor: pointer;
 }
-#answer:hover li {
-    
-    background:  blue;
-}
+
 /* *************************************
 ** Score Board
 ************************************* */
@@ -129,7 +126,12 @@ h1{
     body{
         background-position: center;
     }
-    
+    h1{
+        font-size: 30px;
+    }
+    #question{
+        font-size: 10px;
+    }
   }
 
 
