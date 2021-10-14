@@ -71,6 +71,7 @@ const chooseAnswer = (event, question) => {
         setBoard(questions)
         state.which = !state.which
     }
+   
 }
 
 // Getting random Question 
@@ -94,7 +95,8 @@ const setBoard = (q) => {
     $("li").on("click", (event) => {
         chooseAnswer(event, randomQuestion)
     })
- 
+    $("#reset").on("click", () => {
+         })
 }
 
 ////////////////////////////

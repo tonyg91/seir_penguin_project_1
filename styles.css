@@ -8,6 +8,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+   
 }
 
 /* *************************************
@@ -72,8 +73,12 @@ h1{
     font-weight: bolder;
     border-radius: 50px;
     box-shadow: 6px 4px 30px white;
+    cursor: pointer;
 }
-
+#answer:hover li {
+    
+    background:  blue;
+}
 /* *************************************
 ** Score Board
 ************************************* */
@@ -85,7 +90,7 @@ h1{
     margin: 50px auto;
     border-radius: 60px;
 }
-#player1, #player2{
+#player1, #player2, #reset{
     width: 40%;
     background-color: black;
     box-shadow: 6px 4px 30px yellow;
@@ -107,14 +112,19 @@ h1{
     }
     #answer ul li{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 40%;
         height: auto;
-       margin-right: 45px auto;
+       margin-right: 30px;
        font-size: 10px;
        text-align: center;
        padding: 5px 25px;
        
+    }
+    #answer {
+        display: flex;
+        width: auto;
+        
     }
     body{
         background-position: center;
