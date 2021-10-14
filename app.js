@@ -56,15 +56,22 @@ const chooseAnswer = (event, question) => {
         if(state.player1 === 10){
             alert("Congratulations " + playerOne +  " on your victory")
             setBoard(questions)
+
+            //Reset the scores
             state.player1 = 0
             state.player2 = 0
+
+            
         }else if (state.player2 === 10){
             alert("Congratulations " + playerTwo +  " on your victory")
             setBoard(questions)
+
+            //Reset the scores 
             state.player1 = 0
             state.player2 = 0
         }
             setBoard(questions)
+    //  Incorrect answer display 
     }else {
         alert("That was incorrect. Next player your up")
         console.log("incorrect")
